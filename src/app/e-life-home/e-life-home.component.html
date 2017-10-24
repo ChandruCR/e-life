@@ -1,0 +1,13 @@
+<div class="container-fluid">
+  <div class="row">
+    <div *ngFor="let application of applications;let i = index" class="col-xs-12 col-sm-6 col-md-3 col-lg-2" (click)="enterApplication(application.name)">
+        <div class="thumbnail">
+          <img [src]="application.imagePath" alt="Image of {{application.name}}">
+          <div class="caption">
+            <h4>{{application.name}}</h4>
+            <p>{{application.desc}}</p>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>

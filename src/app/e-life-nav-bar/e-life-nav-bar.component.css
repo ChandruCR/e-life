@@ -1,0 +1,19 @@
+.navbar-inverse {
+    background: rgb(19, 55, 109);
+    border-color: rgb(13, 32, 61);
+    color:aquamarine;
+}
+.navbar-inverse .navbar-toggle{
+    border-color: rgb(13, 32, 61);
+}
+.navbar-inverse .navbar-toggle:hover{
+    background: rgb(13, 32, 61);
+}
+
+.navbar-inverse .navbar-brand {
+    color: #ffffff;
+}
+.nav>li{
+    cursor: hand;                       
+}
+

@@ -1,0 +1,35 @@
+<div class="container-fluid">
+  <div class="row" *ngIf="eRecipeDetails?.length > 0">
+    <div class="col-xs-12 col-sm-4 col-md-2 col-lg-2">
+      <label>{{labels.recipeName}}</label>
+    </div>
+    <div class="col-xs-12 col-sm-8 col-md-4 col-lg-4 value">
+      {{eRecipe.recipeName}}
+    </div>
+    <div class="col-xs-12 col-sm-4 col-md-2 col-lg-2">
+      <label>{{labels.recipeType}}</label>
+    </div>
+    <div class="col-xs-12 col-sm-8 col-md-4 col-lg-4 value">
+      {{eRecipe.recipeType}}
+    </div>
+  </div>
+  <div class="row" *ngIf="eRecipeDetails?.length > 0">
+    <div class="col-xs-12 col-sm-4 col-md-2 col-lg-2">
+      <label>{{labels.description}}</label>
+    </div>
+    <div class="col-xs-12 col-sm-8 col-md-10 col-lg-10 value">
+      {{eRecipeDetails[0].value}}
+    </div>
+  </div>
+  <div class="row" *ngFor="let info of eRecipeDetails | slice:1 ; let i = index  ">
+    <div class="col-xs-12 col-sm-4 col-md-2 col-lg-2">
+      <label>{{info.title | uppercase}}</label>
+    </div>
+    <div class="col-xs-12 col-sm-8 col-md-4 col-lg-4 value">
+      {{info.value}}
+    </div>
+  </div>
+  <div class="col-xs-6 col-sm-6 col-md-3 col-lg-2 pull-right">
+    <button class="btn btn-primary btn-md" (click)="returnHome()">{{labels.return}}</button>
+  </div>
+</div>

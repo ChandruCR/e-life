@@ -1,0 +1,19 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-2" *ngFor="let eRecipe of allERecipes;let i = index" (click)="viewERecipeDetail(eRecipe.recipeName)">
+      <div class="eRecipe">
+        <h4>{{eRecipe.recipeName}}</h4>
+        <i>{{eRecipe.recipeType}}</i>
+        <br/> {{eRecipe.username}}
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-6 col-sm-6 col-md-3 col-lg-2 pull-right">
+      <button class="btn btn-primary btn-md" (click)="addRecipe()">{{labels.add}}</button>
+    </div>
+    <div class="col-xs-6 col-sm-6 col-md-3 col-lg-2 pull-right">
+      <button class="btn btn-primary btn-md" (click)="returnHome()">{{labels.return}}</button>
+    </div>
+  </div>
+</div>

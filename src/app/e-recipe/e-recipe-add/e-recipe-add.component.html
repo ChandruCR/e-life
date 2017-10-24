@@ -1,0 +1,47 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-xs-12 col-sm-4 col-md-2 col-lg-2">
+      <label>{{labels.recipeName}}</label>
+    </div>
+    <div class="col-xs-12 col-sm-8 col-md-4 col-lg-4">
+      <input class="form-control" type="text" maxlength="30" [(ngModel)]="eRecipe.recipeName" placeholder="{{placeHolders.recipeName}}"
+      />
+    </div>
+    <div class="col-xs-12 col-sm-4 col-md-2 col-lg-2">
+      <label>{{labels.recipeType}}</label>
+    </div>
+    <div class="col-xs-12 col-sm-8 col-md-4 col-lg-4">
+      <input class="form-control" type="text" maxlength="30" [(ngModel)]="eRecipe.recipeType" placeholder="{{placeHolders.recipeType}}"
+      />
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12 col-sm-4 col-md-2 col-lg-2">
+      <label>{{labels.description}}</label>
+    </div>
+    <div class="col-xs-12 col-sm-8 col-md-10 col-lg-10">
+      <textarea class="form-control" placeholder="{{placeHolders.description}}" [(ngModel)]="eRecipeDetails[0].value"></textarea>
+    </div>
+  </div>
+  <div class="row" *ngFor="let info of eRecipeDetails | slice:1 ; let i = index  ">
+    <div class="col-xs-12 col-sm-4 col-md-2 col-lg-2">
+      <input class="form-control" type="text" maxlength="30" [(ngModel)]="info.title" placeholder="{{placeHolders.title}}" />
+    </div>
+    <div class="col-xs-12 col-sm-8 col-md-10 col-lg-10">
+      <textarea class="form-control" [(ngModel)]="info.value" placeholder="{{placeHolders.value}}"></textarea>
+    </div>
+  </div>
+  <br/>
+
+  <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+      <button class="btn btn-primary btn-md" (click)="addERecipe()">{{labels.saveRecipe}}</button>
+    </div>
+  <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+    <button class="btn btn-primary btn-md" (click)="addERecipeDetails()">{{labels.addDetails}}</button>
+  </div>
+
+  <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+    <button class="btn btn-primary btn-md" (click)="returnHome()">{{labels.return}}</button>
+  </div>
+  
+</div>

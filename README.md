@@ -1,27 +1,25 @@
-# ELife
+# ELife - Angular 4
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.6.
+This project is part of Microservice implmentation using Springboot, MongoDB and Angular4
 
-## Development server
+Microservice implementation as of 26th October 2017 contains 4 projects
+1. [eLife - Angular4 UI application](https://github.com/ChandruCR/eLife-angular4)
+2. [eLife - Springboot application(consumes microservices)](https://github.com/ChandruCR/eLife-springboot)
+3. [eLife-eureka - Springboot application(eureka service registry and discovery)](https://github.com/ChandruCR/eLife-eureka)
+4. [eRecipe - Springboot application(exposes services to interact with mongodb)](https://github.com/ChandruCR/eRecipe-springboot)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+![alt text](https://github.com/ChandruCR/e-life/blob/master/elife.png)
 
-## Code scaffolding
+### Setup 
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+* Change baseUrlForERecipe property value in environment.ts file to [elife-springboot](https://github.com/ChandruCR/elife)
+* Install all dependencies using "npm install"
+* Then start server using "ng serve --host 0.0.0.0"
+* Open localhost:4200 in browser to access the application
 
-## Build
+##### Chandru - goldenducks
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).

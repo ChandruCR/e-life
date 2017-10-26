@@ -21,45 +21,45 @@ Microservice implementation as of 26th October 2017 contains 4 projects
 
 #### Login Screen
 * Provide username and click on login button
-(https://github.com/ChandruCR/eLife-angular4/blob/master/screenshots/1.png)
+![Login Screen](https://github.com/ChandruCR/eLife-angular4/blob/master/screenshots/1.png)
 
 #### eLife Home Screen
 * List of applications are listed here
 * Click on eRecipe 
-(https://github.com/ChandruCR/eLife-angular4/blob/master/screenshots/2.png)
+![eLife Home Screen](https://github.com/ChandruCR/eLife-angular4/blob/master/screenshots/2.png)
 
 #### eRecipe Home Screen
 * List of all recipes saved by all users are listed here
 * Click on any recipe to view it's details
 * Click on Add Recipe Button to add new recipe
 * Click on return to return to eLife Home
-(https://github.com/ChandruCR/eLife-angular4/blob/master/screenshots/3.png)
+![eRecipe Home Screen](https://github.com/ChandruCR/eLife-angular4/blob/master/screenshots/3.png)
 
 #### eRecipe View Details Screen(Recipe created by same user)
 * Complete details of a recipe 
 * Click on return to return to eRecipe Home 
 * If recipe is created by you then you can click on Delete recipe button to delete the recipe
-(https://github.com/ChandruCR/eLife-angular4/blob/master/screenshots/4.png)
+![eRecipe View Details Screen(Recipe created by same user)](https://github.com/ChandruCR/eLife-angular4/blob/master/screenshots/4.png)
 
 #### eRecipe View Details Screen(Recip created by different user)
-(https://github.com/ChandruCR/eLife-angular4/blob/master/screenshots/5.png)
+![eRecipe View Details Screen(Recip created by different user)](https://github.com/ChandruCR/eLife-angular4/blob/master/screenshots/5.png)
 
 #### Add eRecipe Screen
 * Provide values for Recipe Name, Recipe Type and Description
 * If you want to enter more details click on Add details button
-(https://github.com/ChandruCR/eLife-angular4/blob/master/screenshots/6.png)
-(https://github.com/ChandruCR/eLife-angular4/blob/master/screenshots/7.png)
+![Add eRecipe Screen](https://github.com/ChandruCR/eLife-angular4/blob/master/screenshots/6.png)
+![Add eRecipe Screen](https://github.com/ChandruCR/eLife-angular4/blob/master/screenshots/7.png)
 
 #### eRecipe Home Screen(after addition of new recipe)
-(https://github.com/ChandruCR/eLife-angular4/blob/master/screenshots/8.png)
+![eRecipe Home Screen(after addition of new recipe)](https://github.com/ChandruCR/eLife-angular4/blob/master/screenshots/8.png)
 
-#### eRecipe view(viewing and deleting newly created recipe)u on
-(https://github.com/ChandruCR/eLife-angular4/blob/master/screenshots/9.png)
-(https://github.com/ChandruCR/eLife-angular4/blob/master/screenshots/10.png)
+#### eRecipe view(viewing and deleting newly created recipe)
+![eRecipe view(viewing and deleting newly created recipe)](https://github.com/ChandruCR/eLife-angular4/blob/master/screenshots/9.png)
+![eRecipe view(viewing and deleting newly created recipe)](https://github.com/ChandruCR/eLife-angular4/blob/master/screenshots/10.png)
 
 #### Logout
 * You can click on logout button on top right corner to return to login screen
-(https://github.com/ChandruCR/eLife-angular4/blob/master/screenshots/1.png)
+![logout](https://github.com/ChandruCR/eLife-angular4/blob/master/screenshots/1.png)
 
 
 

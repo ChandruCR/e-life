@@ -5,5 +5,5 @@
 
 export const environment = {
   production: false,
-  baseUrlForERecipe: "http://localhost:7002/erecipe"
+  baseUrlForERecipe: "http://192.168.178.227:7001/elife/erecipe"
 };

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { global } from './../../global';
+import { DataService } from './../../data.service';
 
 import { ERecipeService } from './../e-recipe.service';
 
@@ -12,7 +13,9 @@ import { ERecipeService } from './../e-recipe.service';
 export class ERecipeAddComponent implements OnInit {
 
   router: Router;
+  data: DataService;
   eRecipeServie: ERecipeService;
+  username: string;
   labels: any;
   placeHolders: any;
   eRecipeDetails = [];
@@ -25,15 +28,16 @@ export class ERecipeAddComponent implements OnInit {
     }
   };
   
-  constructor(_router: Router, _eRecipeServie: ERecipeService) {
+  constructor(_router: Router, _eRecipeServie: ERecipeService, _data: DataService) {
     this.router = _router;
+    this.data = _data;
     this.eRecipeServie = _eRecipeServie;
   }
 
   ngOnInit() {
+    this.data.currentUsername.subscribe(username => {this.username = username; this.eRecipe.username = username;}); // username from DataService
     this.placeHolders = global.placeHolders.addERecipe; // getting placeholders from global variable
     this.labels = global.labels.addERecipe; // getting labels from global variable
-    this.eRecipe.username = global.username; // getting username from global variable
     this.eRecipeDetails.push({ title: "Description", value: "" });
   }
 
@@ -52,7 +56,7 @@ export class ERecipeAddComponent implements OnInit {
       // saving recipe to the server.
       this.eRecipeServie.saveERecipe(this.eRecipe).  
         subscribe(data => {
-          this.router.navigate(['/elife/erecipe', global.username]);
+          this.router.navigate(['/elife/erecipe', this.username]);
         },
         err => {
         });
@@ -61,6 +65,6 @@ export class ERecipeAddComponent implements OnInit {
 
   // this will navigate user to home screen
   returnHome() {
-    this.router.navigate(['/elife/erecipe', global.username]);
+    this.router.navigate(['/elife/erecipe', this.username]);
   }
 }

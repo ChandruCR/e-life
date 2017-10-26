@@ -1,6 +1,14 @@
 <div class="container-fluid">
+  <!--<div class="row">
+      <div class="col-xs-12 col-sm-6 col-md-3 col-lg-2">
+      
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-3 col-lg-2">
+
+      </div>
+  </div> -->
   <div class="row">
-    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-2" *ngFor="let eRecipe of allERecipes;let i = index" (click)="viewERecipeDetail(eRecipe.recipeName)">
+    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-2" *ngFor="let eRecipe of allERecipes;let i = index" (click)="viewERecipeDetail(eRecipe.username , eRecipe.recipeName)">
       <div class="eRecipe">
         <h4>{{eRecipe.recipeName}}</h4>
         <i>{{eRecipe.recipeType}}</i>
